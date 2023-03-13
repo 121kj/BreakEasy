@@ -4,39 +4,19 @@ body {
   background-color: #000;
   color: #fff;
   font-size: 18px;
-  transition: background-color 2s ease-in-out;
 }
 
-#v1 {
+#v {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  right: 0;
   top: 0;
-  width: 100%;
-  min-height: 100%;
+  left: 0;
 }
 
-#v2 {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  min-height: 100%;
-}
-
-#v3 {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  min-height: 100%;
-}
-
-#v4 {
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  min-height: 100%;
+.first-page {
+  height: 100vh;
 }
 
 .container-fluid{
@@ -44,12 +24,27 @@ body {
   max-width: 1728px;
 }
 
+.title {
+  height: 50vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  line-height: 0.75;
+  font-size: 10vw;
+}
+
 h2 {
-  position: fixed;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 500px;
+  font-size: 3vw;
+}
+
+.no-color {
+  visibility: hidden;
 }
 
 /* Navigation Bar **************************************************************** */
@@ -64,39 +59,8 @@ h2 {
 
 /* Responsible ******************************************************************* */
 
-@media (min-width: 906px) {
-  #v2 {
-    display: none;
-  }
-}
-
-
-@media (max-width: 905px) {
-  #v1 {
-    display: none;
-  }
-}
-
-@media (min-width: 716px) {
-  #v3 {
-    display: none;
-  }
-}
-
 @media (max-width: 715px) {
-  #v2 {
-    display: none;
-  }
-}
-
-@media (min-width: 421px) {
-  #v4 {
-    display: none;
-  }
-}
-
-@media (max-width: 420px) {
-  #v3 {
-    display: none;
+  .navbar-brand img{
+    height: 60px;
   }
 }
