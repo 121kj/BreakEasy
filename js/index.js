@@ -1,2 +1,5 @@
 const mainVideo = document.getElementById("v");
-mainVideo.play();
+
+document.onload = function (){
+    mainVideo.play();
+}
