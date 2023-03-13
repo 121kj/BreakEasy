@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body onload="playVideo()">
 
   <div class="first-page">
     <div class="video-div">
@@ -46,7 +46,12 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 
-  <!-- <script src="./js/index.js"></script> -->
+  <script>
+    function playVideo() {
+      const mainVideo = document.getElementById("v");
+      mainVideo.play();
+    }
+  </script>
 
 </body>
 
