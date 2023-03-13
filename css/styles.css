@@ -63,4 +63,8 @@ h2 {
   .navbar-brand img{
     height: 60px;
   }
+
+  h2 {
+    font-size: 5vw;
+  }
 }
