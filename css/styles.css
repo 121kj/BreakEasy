@@ -12,7 +12,13 @@ body {
   left: 0;
 }
 
-#v {
+#v1 {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#v2 {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -73,5 +79,17 @@ a {
 
   .navbar {
     padding: 2% 2%;
+  }
+}
+
+@media (max-width: 450px) {
+  #v1 {
+    display: none;
+  }
+}
+
+@media (min-width: 451px) {
+  #v2 {
+    display: none;
   }
 }
