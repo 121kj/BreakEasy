@@ -19,11 +19,6 @@ body {
   height: 100vh;
 }
 
-.container-fluid{
-  padding: 15% 15%;
-  max-width: 1728px;
-}
-
 .title {
   height: 50vh;
   position: relative;
@@ -41,6 +36,11 @@ h1 {
 
 h2 {
   font-size: 3vw;
+}
+
+a {
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .no-color {
@@ -66,5 +66,9 @@ h2 {
 
   h2 {
     font-size: 5vw;
+  }
+
+  .navbar {
+    padding: 2% 2%;
   }
 }
