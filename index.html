@@ -48,9 +48,10 @@
 
   <script>
     function playVideo() {
-      const mainVideo = document.getElementById("v");
-      mainVideo.pause();
-      mainVideo.play();
+      const mainVideo = document.getElementById("v1");
+      if(mainVideo.paused){
+        alert('Autoplay is disabled when the iPhone or iPad is in Low Power Mode.');
+      }
     }
   </script>
 
